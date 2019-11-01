@@ -19,8 +19,8 @@
   <h1>LogIn:</h1>
   <div id="login-form">
     <form class="login" action="login.inc.php" method="post" >
-      <input type="text" name="Username" value="" required placeholder="userName">
-      <input type="password" name="Password" value="" required placeholder="PassWord">
+      <input type="text" name="Uname" value="" required placeholder="Username">
+      <input type="password" name="password" value="" required placeholder="Password">
       <button type="submit" name="button-submit-login">Log Me In</button>
     </form>
   </div>
