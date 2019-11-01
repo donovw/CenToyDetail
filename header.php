@@ -10,7 +10,7 @@
   <body>
 <header>
   <div class="menu" onclick="openActionMenu()"></div>
-  <div class="logo"></div>
+  <div class="logo"> <a href="index.php"></a> </div>
   <div class="login-header" onclick="openLoginMenu()"><?php include 'includes/login.header.php'; ?></div>
 </header>
 

@@ -46,6 +46,11 @@ ul{
   background-repeat: no-repeat;
   cursor: pointer;
 }
+.logo a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
 .login-header {
   width: 100px;
   max-width: 33%;
