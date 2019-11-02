@@ -28,4 +28,16 @@
       </tr>
     </tbody>
   </table>
+  <div id="status">
+  <select class="statusselect" name="statussel">
+    <option value="options">options</option>
+  </select>
+  </div>
+  <div id="comment">
+    test
+  </div>
+  <div id="save-exit-vehinfo">
+    <button type="button" name="btn-cancel-vehinfo">Cancel</button>
+    <button type="button" name="btn-update-vehinfo">Save and Exit</button>
+  </div>
 </div>
