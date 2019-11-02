@@ -1,8 +1,10 @@
 function openLoginMenu() {
+  document.querySelector("main").style.opacity = ".2";
   document.getElementById('login-menu').style.display = "block";
 }
 
 function closeLoginMenu() {
+  document.querySelector("main").style.opacity = "1";
   document.getElementById('login-menu').style.display = "none";
 }
 

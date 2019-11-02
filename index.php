@@ -8,3 +8,6 @@
     </div>
   </div>
 </main>
+
+<div id="vehinfo-container"><?php include "includes/vehinfo.php" ?></div>
+<?php require "footer.php" ?>

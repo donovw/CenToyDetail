@@ -19,14 +19,22 @@ header {
 }
 main {
   position: absolute;
+  display: flex;
   width: 100%;
   height: 90vh;
   background-color: red;
+  justify-content: center;
+  transition: opacity 0.3s linear;
 }
 ul{
   display: flex;
   flex-direction: column;
   font-size: 25px;
+}
+th{
+  border: 1px;
+  border-style: solid;
+  border-color: white;
 }
 .menu {
   height: inherit;
@@ -67,7 +75,7 @@ ul{
   height: 50%;
   width: 80vw;
   max-width: 1500px;
-  background-color: #222;
+  background-color: #555;
   z-index: 1000;
   text-align: center;
 }
@@ -88,6 +96,7 @@ ul{
 }
 .login input[type=text],.login input[type=password],.login button[type=submit] {
 width: 200px;
+font-size: 25px;
 padding: 20px 20px;
 margin: 15px 15px;
 background-color: black;
@@ -108,7 +117,7 @@ text-align: center;
 #vehsearch {
   position: absolute;
   width: 80%;
-  left:10%;
+  max-width: 600px;
   height: 80%;
   top: 50px;
   text-align: center;
@@ -117,7 +126,7 @@ text-align: center;
   width: 100px;
   height: 100px;
   font-size: 25px;
-  background-color: #222;
+  background-color: black;
   border-radius: 25px;
   margin-left: auto;
   margin-right: auto;
@@ -127,7 +136,7 @@ text-align: center;
   height: 100px;
   width: 75%;
   text-align: center;
-  background-color: #222;
+  background-color: black;
   font-size: 25px;
   border-radius: 25px;
 }
@@ -137,4 +146,16 @@ text-align: center;
   display: flex;
   top: 60%;
   justify-content: center;
+}
+#vehinfo-container {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  top: 10%;
+  height: 80%;
+  width: 80%;
+  z-index: 1000;
+  left:10%;
+  background-color: #555;
+
 }
