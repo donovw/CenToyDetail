@@ -3,12 +3,12 @@
     <div id="vinnum">
     VIN:
     <br>
-    <input type="text" name="vinnum" value="" maxlength="16" placeholder="VIN Number">
+    <input type="text" id="vinnumfield" value="" maxlength="17"  placeholder="VIN Number">
     </div>
   <div id="stocknum">
     Stock #:
     <br>
-    <input type="text" name="stocknum" value="" maxlength="6" placeholder="Stock #">
+    <input type="text" id="stocknumfield" value=""  maxlength="6" placeholder="Stock #">
   </div>
 
 </div>
@@ -21,23 +21,29 @@
     </thead>
     <tbody>
       <tr>
-        <td> <input type="text" name="year" value="" placeholder="year"> </td>
-        <td> <input type="text" name="make" value="" placeholder="make"> </td>
-        <td> <input type="text" name="model" value="" placeholder="model"> </td>
-        <td> <input type="text" name="model" value="" placeholder="color"> </td>
+        <td> <input type="text" id="year" value=""  placeholder="year"> </td>
+        <td> <input type="text" id="make" value=""  placeholder="make"> </td>
+        <td> <input type="text" id="model" value=""  placeholder="model"> </td>
+        <td> <input type="text" id="color" value=""  placeholder="color"> </td>
       </tr>
     </tbody>
   </table>
   <div id="status">
-  <select class="statusselect" name="statussel">
+  <select class="statusselect" id="statussel">
     <option value="options">options</option>
   </select>
   </div>
   <div id="comment">
-    test
+    COMMENTS:
+    <textarea id="comarea" rows="8" cols="45"></textarea>
+  </div>
+  <div id="est">
+      RECON ESTIMATE:
+      <input type="text" id="recoest" step="0.01"  placeholder="Estimate" value="">
   </div>
   <div id="save-exit-vehinfo">
-    <button type="button" name="btn-cancel-vehinfo">Cancel</button>
-    <button type="button" name="btn-update-vehinfo">Save and Exit</button>
+    <button type="button" id="btn-cancel-vehinfo" onclick="closeInfoPopup()">Cancel</button>
+    <button hidden type="button" id="btn-view-checklist">Check Sheet</button>
+    <button type="button" id="btn-update-vehinfo">Save and Exit</button>
   </div>
 </div>

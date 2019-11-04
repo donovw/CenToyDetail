@@ -4,7 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <link rel="stylesheet" href="style.css">
-    <script src="menus.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js\menus.js" charset="utf-8"></script>
+    <script src="js\vehinfo.js" charset="utf-8"></script>
+    <script src="js\formatmoney.js" charset="utf-8"></script>
+    <script src="js\login.js" charset="utf-8"></script>
     <title></title>
   </head>
   <body>
@@ -18,10 +22,10 @@
   <div id="close" onclick="closeLoginMenu()"> X </div>
   <h1>LogIn:</h1>
   <div id="login-form">
-    <form class="login" action="login.inc.php" method="post" >
-      <input type="text" name="Uname" value="" required placeholder="Username">
-      <input type="password" name="password" value="" required placeholder="Password">
-      <button type="submit" name="button-submit-login">Log Me In</button>
+    <form class="login" id="loginform" method="get">
+      <input type="text" name="username" value="" required placeholder="Username">
+      <input type="password" name="pass" value="" required placeholder="Password">
+      <button type="submit" name="button-submit-login" onclick="logMeIn()">Log Me In</button>
     </form>
   </div>
 </div>

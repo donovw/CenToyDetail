@@ -16,6 +16,3 @@ function openActionMenu() {
       document.getElementById('action-menu').style.display = "none";
   })
 }
-function searchbystk() {
-  document.getElementById("vehinfo-container").style.display = "flex";
-}
